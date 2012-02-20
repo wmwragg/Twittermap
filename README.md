@@ -25,7 +25,7 @@ First you will need to host the twittermap folder somewhere on the internet that
 
 	http://dl.dropbox.com/u/<some numbers>/twittermap/twittermap.js
 
-The <some numbers> section will be your dropbox public folder id, and won't change. Use this URL up to and including the <some numbers> section, to prefix the includes.
+The `<some numbers>` section will be your dropbox public folder id, and won't change. Use this URL up to and including the <some numbers> section, to prefix the includes.
 You can now embed a twitter map in a tumblr post by editing your tumblr templates html and adding the following twittermap includes:
 
 	<!-- Leaflet CSS -->
