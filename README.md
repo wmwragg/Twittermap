@@ -37,7 +37,7 @@ You can now embed a twitter map in a tumblr post by editing your tumblr template
 	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/dependencies/twitterlib/twitterlib.min.js"></script>
 	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/twittermap.js"></script>
 
-Then after saving the changes, all you need to do is create a text post, make sure to use the html editing option, and add the following lines to the post:
+Then after saving the changes, all you need to do is create a text post, make sure that in the tumblr preferences under 'Edit posts using' you have 'Plain text/HTML' selected, and add the following lines to the post:
 
 	<div id="map" style="height: 200px"></div> <!-- width equals available horizontal space by default -->
 	<script>twittermap.createmap('map', 'wmwragg', 10, "Feb 21, 2012");</script>
