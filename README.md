@@ -8,7 +8,7 @@ To use twittermap.js just include the following in the head section of your page
 
 	<!-- Twittermap requited JavaScript -->
 	<script src="twittermap/dependencies/leaflet/leaflet.js"></script>
-	<script src="twittermap/dependencies/twitterlib/twitterlib.min.js"></script>
+	<script src="twittermap/dependencies/twitterlib/twitterlib-altered.js"></script>
 	<script src="twittermap/twittermap.js"></script>
 
 Obviously include the full URL to where the twittermap directory is stored.
@@ -40,7 +40,7 @@ You can now embed a twitter map in a tumblr post by editing your tumblr template
 
 	<!-- Twittermap requited JavaScript -->
 	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/dependencies/leaflet/leaflet.js"></script>
-	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/dependencies/twitterlib/twitterlib.min.js"></script>
+	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/dependencies/twitterlib/twitterlib-altered.js"></script>
 	<script src="http://dl.dropbox.com/u/<some numbers>/twittermap/twittermap.js"></script>
 
 Then after saving the changes, all you need to do is create a text post, make sure that in the tumblr preferences under 'Edit posts using' you have 'Plain text/HTML' selected, and add the following lines to the post:
