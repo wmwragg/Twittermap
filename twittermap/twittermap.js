@@ -91,7 +91,7 @@
 
       var tweetsCallback = function (tweets) {
         // Only process the tweets if ther were some
-        if (tweets !== null && tweets.length > 0) { 
+        if (tweets !== undefined && tweets !== null && tweets.length > 0) { 
           for (var i = tweets.length - 1; i >= 0; i--) {
             // Add a marker and popup for the tweet if it has a location
             if (showTweet(tweets[i], sinceTweetsDate)) {
