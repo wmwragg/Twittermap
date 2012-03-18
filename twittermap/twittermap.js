@@ -12,7 +12,7 @@
       var map = new L.Map(mapDiv);
   
       var openstreetmapsUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-          cloudmadeAttrib = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
+          cloudmadeAttrib = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 OpenStreetMap',
           cloudmade = new L.TileLayer(openstreetmapsUrl, {maxZoom: 18, attribution: cloudmadeAttrib});
   
       // Set view to that last tweet or london if none available
