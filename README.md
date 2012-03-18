@@ -20,6 +20,12 @@ Then in the body of the page include the following:
 
 The id of the **div** should be the what you use as the first argument to the twittermap.createmap function. The second argument is the twitter users name that you want the map for. The third and forth arguments are limits on the twitter query, the first limits the number of tweets returned from twitter, keep this as small as possible to speed up the query, and the second filters the returned tweets to only allow tweets since the date supplied to be shown. The date is in the format of "MMM dd, YYYY".
 
+There is an additional fifth argument that can be used, and it is the date from which a path should start to be plotted along with the tweets. The date format is the same as for the tweet filter date above.
+
+Both the tweets filter date and the path date arguments can be replaced with start and end tweet ids. The ids are the numbers shown after the '#' at the bottom of the tweet popups. If the start and end ids are given instead of a tweet filter date, then twitter will only return tweets between the start and end ids, this is more efficient and should be quicker. Also the start and end ids should be used if you always want a specifc set of tweets to be shown, as the tweets filter date is only used on the most recent 200 tweets from the timeline, so eventually all the 200 tweets will be newer than the filter date and no tweets will be shown. If the start and end ids are given instead of the path start date, then the path will only be shown for the tweets that fall between the ids. The format for the start end ids is "[`<start long number>`, `<end long number>`]" e.g. twittermap.createmap('map', 'wmwragg', 10, [175831717284806660, 179938209122365440]);
+
+Both the tweet filter argument, and the path argument, are optional you could just use twittermap.createmap('map', 'wmwragg', 10);
+
 ### Embedding in a tumblr post
 First you will need to host the twittermap folder somewhere on the internet that tumblr can see. If you have a Dropbox account just add it to your public folder. Then copy the public link to the twittermap.js file it will look something like this:
 
