@@ -41,8 +41,8 @@
       if (tweetsConfig !== undefined && (typeof tweetsConfig === 'string')) {
         sinceTweetsDate = new Date(tweetsConfig);
       } else if (tweetsConfig !== undefined && tweetsConfig.length === 2) {
-        twitterlibOptions.since = tweetsConfig[0] - 1;
-        twitterlibOptions.max = tweetsConfig[1] + 1;
+        twitterlibOptions.since = tweetsConfig[0];
+        twitterlibOptions.max = tweetsConfig[1];
       }
       if (pathConfig !== undefined && (typeof pathConfig === 'string')) {
         sincePathDate = new Date(pathConfig);
