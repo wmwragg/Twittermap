@@ -77,7 +77,7 @@
           }
         } else if (pathConfig !== undefined && pathConfig.length === 2) {
           // There is a start and end id, so check if tweet is between them
-          if (tweet.id >= pathConfig[0] && tweet.id <= pathConfig[1]) { 
+          if (tweet.id_str >= pathConfig[0] && tweet.id_str <= pathConfig[1]) { 
             return true;
           }
         } else {
@@ -105,7 +105,7 @@
               var marker = new L.Marker(markerLocation);
               map.addLayer(marker);
     
-              marker.bindPopup(this.ify.clean(tweets[i].text) + "<br/><i><b>" + this.time.relative(tweets[i].created_at) + "</b>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#CCC;'>#" + tweets[i].id + "</span></i>");
+              marker.bindPopup(this.ify.clean(tweets[i].text) + "<br/><i><b>" + this.time.relative(tweets[i].created_at) + "</b>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#CCC;'>#" + tweets[i].id_str + "</span></i>");
     
               lastPoint = markerLocation;
               lastMarker = marker;
